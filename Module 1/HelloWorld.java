@@ -78,10 +78,10 @@ public class HelloWorld extends PApplet
 		// TODO: Add code here that creates map2 
 		// Then you'll modify draw() below
 		
-		map2=new UnfoldingMap(this,405,50,350,500,provider);      //x coordinate->400,y->50,width->350,height->
+		map2=new UnfoldingMap(this,405,50,350,500,provider);      //x coordinate->400,y->50,width->350,height->500
 		// The next line zooms in and centers the map at 
-	    // 31.3 (latitude) and 76.3 (longitude)
-		map2.zoomAndPanTo(zoomLevel, new Location(31.3f,76.3f));
+	        // 31.3 (latitude) and 76.3 (longitude)
+		map2.zoomAndPanTo(zoomLevel, new Location(31.3f,76.3f));      //here i add the location of my hometown
 		MapUtils.createDefaultEventDispatcher(this, map2);
 		
 	}
